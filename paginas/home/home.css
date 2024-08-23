@@ -1,0 +1,37 @@
+body{
+    width: 10%;
+    height: 100vh;
+    background-image: url('../../assets/img/farmas.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.relatorio{
+    width: 78vw;
+    height: 90vh;
+    position:absolute;
+    top: 0;
+    right:0; 
+    
+}
+
+.relatorio h1{
+    font-family:  arial;
+    color: aliceblue;
+}
+
+.relatorio table{
+    width: 100%;
+    font-family: arial;
+}
+
+table th{
+   color:aliceblue;
+    text-align: left;
+}
+
+table td{
+    color: aliceblue;
+}

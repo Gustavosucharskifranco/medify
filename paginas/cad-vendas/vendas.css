@@ -1,0 +1,87 @@
+.cadastro{
+    width:83vw ;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cadastro header{
+    font-family: arial;
+    font-size: 1em;
+}
+
+.cadastro .inputs{
+
+    width: 98%;
+    height: 45%;
+    padding: 1%;
+
+}
+
+.inputs input{
+    
+    padding: 5px;
+    border: 1px green solid;
+    border-radius:5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-bottom: 60px;
+}
+
+.inputs input[type=text]{
+    width: 200px;
+    height: 35px;
+}
+
+.controles button{
+    width: 100px;
+    padding: 10px;
+    color: aliceblue;
+    border:0 ;
+    border-radius: 5px;
+}
+
+.salvar{
+    background-color: green;
+}
+
+.salvar:hover{
+    background-color: darkgreen;
+    transition-duration: 0.2s;
+}
+
+.cancelar:hover{
+    background-color: darkred;
+    transition-duration: 0.2s;
+}
+
+.cancelar{
+    background-color: red;
+}
+
+.relatorio{
+    width: 90%;
+    height: 30%;
+    padding: 10px;
+    
+    
+}
+
+.relatorio h1{
+    font-family:  arial;
+}
+
+.relatorio table{
+    width: 100%;
+    font-family: arial;
+}
+
+table th{
+    border-bottom: 1px #DDD solid;
+    text-align: left;
+}
+
+table td{
+    border-bottom: 1px #EEE solid;
+}
