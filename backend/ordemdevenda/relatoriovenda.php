@@ -13,12 +13,14 @@
         $preparo = $conexao->prepare("
        
          select
-           dt_venda, 
-           metododepagamento, 
-           dt_pagamento, 
-           tipo, 
-           situacao
-        from tb_venda "
+           v.dt_venda, 
+           v.metododepagamento, 
+           v.dt_pagamento, 
+           t.decricao as tipo, 
+           s.descricao as situacao
+        from tb_venda v
+            inner join tb_situacao s on s.id = v.situacao
+            inner join tb_tipo t on t.id = v.tipo"
             
 
     );

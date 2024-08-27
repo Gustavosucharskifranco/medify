@@ -12,11 +12,15 @@
     //Prepara a query SQL para execução
         $preparo = $conexao->prepare("
         select
-           dt_solicitacao,
-           dt_entregue,
-           dt_previsao,
-           dt_pagamento 
-        from tb_ordedecompra "
+           oc.dt_solicitacao,
+           oc.dt_entregue,
+           oc.dt_previsao,
+           oc.dt_pagamento,
+           m.nome,
+           oci.quantidade
+        from tb_ordedecompra oc
+            inner join tb_oc_item oci on oci.ordem_compra = oc.id
+            inner join tb_medicamento m on m.id = oci.medicamento"
             
 
     );

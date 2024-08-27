@@ -76,8 +76,10 @@ include_once '../../backend/material/buscarmedicamento.php';
             <table>
                 <tr>
                     <th>Ação</th>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
                     <th>solicitação</th>
-                    <th>entregue</th>
+                    <th>pagamento</th>
                     <th>Previsão</th>
                     <th>Pagamento</th>
 
@@ -95,10 +97,12 @@ include_once '../../backend/material/buscarmedicamento.php';
                     echo ("
     <tr>
     <td><button>Excluir</button></td>
+     <td>" . $compra['nome'] . "</td>
+      <td>" . $compra['quantidade'] . "</td>
     <td>" . $compra['dt_solicitacao'] . "</td>
-    <td>" . $compra['dt_pagamento'] . "</td>
-    <td>" . $compra['dt_previsao'] . " </td>
-    <td>" . $compra['dt_pagamento'] . "</td>
+    <td>" . $compra['dt_previsao'] . "</td>
+    <td>" . $compra['dt_pagamento'] . " </td>
+    <td>" . $compra['dt_entregue'] . "</td>
 </tr>
     ");
                 }
